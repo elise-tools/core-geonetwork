@@ -1,3 +1,8 @@
+# Scoped fork of GeoNetwork opensource
+
+On this fork we are going to perform some research related to introducing user feedback mechanisms in GeoNetwork. Stay tuned. Read more in issues and wiki.
+
+
 # Build Health
 
 [![Build Status](https://travis-ci.org/geonetwork/core-geonetwork.svg?branch=develop)](https://travis-ci.org/geonetwork/core-geonetwork)
