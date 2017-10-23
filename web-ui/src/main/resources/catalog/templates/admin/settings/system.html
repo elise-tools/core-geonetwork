@@ -91,7 +91,6 @@
                       data-ng-switch-when="metadata/editor/schemaConfig" type="text"
                       class="form-control" id="{{s['name']}}" name="{{s.name}}"
                     ></textarea>
-
                     <select data-ng-switch-when="system/server/protocol"
                             class="form-control"
                             name="{{s.name}}">
@@ -117,6 +116,18 @@
                       <option value="2"
                               ng-selected="'2' == s.value">
                         {{'system/oai/mdmode-valueModificationDate' | translate}}
+                      </option>
+                    </select>
+                    <select data-ng-switch-when="system/localrating/enable" class="form-control"
+                            name="{{s.name}}">
+                      <option value=""
+                              ng-selected="'' == s.value">{{'off' | translate}}
+                      </option>
+                      <option value="basic"
+                              ng-selected="'basic' == s.value">{{'basic' | translate}}
+                      </option>
+                      <option value="advanced"
+                              ng-selected="'advanced' == s.value">{{'advanced' | translate}}
                       </option>
                     </select>
                     <select data-ng-switch-when="system/requestedLanguage/only" class="form-control"
